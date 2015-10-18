@@ -33,7 +33,7 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/home/home.html',
+                templateUrl: 'src/app/home/home.html',
                 controller: 'HomeCtrl',
                 controllerAs: 'vm',
                 data: {
@@ -63,7 +63,7 @@
             })
             .state('locations', {
                 url: '/locations',
-                templateUrl: 'app/locations/locations.html',
+                templateUrl: 'src/app/locations/locations.html',
                 controller: 'LocationsCtrl',
                 controllerAs: 'vm',
                 resolve: {
@@ -74,7 +74,7 @@
             })
             .state('location', {
                 url: '/location/:id',
-                templateUrl: 'app/locations/edit-location.html',
+                templateUrl: 'src/app/locations/edit-location.html',
                 controller: 'EditLocationCtrl',
                 controllerAs: 'vm',
                 resolve: {
@@ -95,7 +95,7 @@
             })
             .state('leagues', {
                 url: '/leagues',
-                templateUrl: 'app/leagues/leagues.html',
+                templateUrl: 'src/app/leagues/leagues.html',
                 controller: 'LeaguesCtrl',
                 controllerAs: 'vm',
                 resolve: {
@@ -109,13 +109,13 @@
                 abstract: true,
                 controller: 'LeagueShellCtrl',
                 controllerAs: 'vm',
-                templateUrl: 'app/layout/league-shell.html'
+                templateUrl: 'src/app/layout/league-shell.html'
             })
             .state('league.teams', {
                 url: '/teams',
                 views: {
                     'tabContent': {
-                        templateUrl: 'app/teams/teams.html',
+                        templateUrl: 'src/app/teams/teams.html',
                         controller: 'TeamsCtrl',
                         controllerAs: 'vm',
                         resolve: {
@@ -139,7 +139,7 @@
                 url: '/games',
                 views: {
                     'tabContent': {
-                        templateUrl: 'app/games/games.html',
+                        templateUrl: 'src/app/games/games.html',
                         controller: 'GamesCtrl',
                         controllerAs: 'vm',
                         resolve: {
@@ -154,7 +154,7 @@
                 url: '/games-calendar',
                 views: {
                     'tabContent': {
-                        templateUrl: 'app/games/games-calendar.html',
+                        templateUrl: 'src/app/games/games-calendar.html',
                         controller: 'GamesCtrl',
                         controllerAs: 'vm',
                         resolve: {
@@ -169,7 +169,7 @@
                 url: '/league-home',
                 views: {
                     'tabContent': {
-                        templateUrl: 'app/league-home/league-home.html',
+                        templateUrl: 'src/app/league-home/league-home.html',
                         controller: 'LeagueHomeCtrl',
                         controllerAs: 'vm',
                         resolve: {
@@ -189,3 +189,4 @@
         // Include $route to kick start the router.
     }]);
 })();
+
