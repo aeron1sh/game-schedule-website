@@ -24,10 +24,10 @@
             saveTeam: saveTeam
         };
 
-        var baseUrl = 'https://eliteschedule-demo.azure-mobile.net/tables';
+        var baseUrl = 'https://gameschedule.azure-mobile.net/tables';
         var requestConfig = {
             headers: {
-                'X-ZUMO-APPLICATION': 'YkTOrCYfZlzACLLtxrYfYaCobtLZaO64'
+                'X-ZUMO-APPLICATION': 'IjNBurSkvpxnLhEZjzwYHzXIOLLJue40'
             }
         };
 
