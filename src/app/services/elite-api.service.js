@@ -27,8 +27,6 @@
         var baseUrl = 'https://gameschedule.azure-mobile.net/tables';
         var requestConfig = {
             headers: {
-                "Access-Control-Allow-Origin": 'http://aeron1sh.github.io',
-                'X-ZUMO-APPLICATION': 'IjNBurSkvpxnLhEZjzwYHzXIOLLJue40'
             }
         };
 
