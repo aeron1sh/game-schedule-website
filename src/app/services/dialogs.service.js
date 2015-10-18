@@ -14,7 +14,7 @@
 
         function confirm(message, title, buttons){
             var modalInstance = $modal.open({
-                templateUrl: '/app/shared/confirm-modal.html',
+                templateUrl: 'src/app/shared/confirm-modal.html',
                 controller: 'ConfirmModalCtrl',
                 controllerAs: 'vm',
                 resolve: {
